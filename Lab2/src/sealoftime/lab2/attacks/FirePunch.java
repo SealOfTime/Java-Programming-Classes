@@ -17,6 +17,6 @@ public class FirePunch extends PhysicalMove{
 	}
 	@Override
 	public String describe(){
-		return "The target is punched with a fiery fist. This may also leave the target with a burn.";
+		return MoveMessages.getStr("firePunch");
 	}
 }

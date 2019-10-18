@@ -23,6 +23,6 @@ public class Facade extends PhysicalMove{
 	
 	@Override 
 	public String describe(){
-		return "uses an attack that is boosted if user is burned, poisoned, or paralyzed.";
+		return MoveMessages.getStr("facade");
 	}
 }

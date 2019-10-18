@@ -12,6 +12,6 @@ public class DoubleEdge extends PhysicalMove{
 	}
 	@Override
 	public String describe(){
-		return "uses a life-risking tackle that also hurts the user.";
+		return MoveMessages.getStr("doubleEdge");
 	}
 }

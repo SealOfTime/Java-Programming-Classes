@@ -17,6 +17,6 @@ public class FocusBlast extends SpecialMove{
 	}
 	@Override
 	public String describe(){
-		return "heightens its mental focus and unleashes its power. This may also lower the target’s Sp. Def stat.";
+		return MoveMessages.getStr("focusBlast");
 	}
 }

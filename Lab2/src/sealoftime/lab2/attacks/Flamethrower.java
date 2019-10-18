@@ -17,6 +17,6 @@ public class Flamethrower extends SpecialMove{
 	}
 	@Override
 	public String describe(){
-		return "uses a powerful fire attack that may inflict a burn.";
+		return MoveMessages.getStr("flamethrower");
 	}
 }

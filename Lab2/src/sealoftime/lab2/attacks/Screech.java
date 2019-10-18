@@ -17,6 +17,6 @@ public class Screech extends StatusMove{
 	
 	@Override
 	public String describe(){
-		return "emits a screech to sharply reduce the foe’s DEFENSE.";
+		return MoveMessages.getStr("screech");
 	}
 }

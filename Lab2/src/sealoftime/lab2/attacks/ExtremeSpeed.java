@@ -8,6 +8,6 @@ public class ExtremeSpeed extends PhysicalMove{
 	}
 	@Override
 	public String describe(){
-		return String.format("charges itself at blinding speed. This move always goes first.");
+		return MoveMessages.getStr("extremeSpeed");
 	}
 }

@@ -1,6 +1,7 @@
 package sealoftime.lab2.attacks;
 
 import ru.ifmo.se.pokemon.*;
+import sealoftime.lab2.MoveMessages;
 
 public class FireBlast extends SpecialMove{
 	public FireBlast(){
@@ -18,6 +19,6 @@ public class FireBlast extends SpecialMove{
 	
 	@Override
 	public String describe(){
-		return "uses a fiery blast that scorches all. May cause a burn.";
+		return MoveMessages.getStr("fireBlast");
 	}
 }

@@ -15,6 +15,6 @@ public class SwordsDance extends StatusMove{
 	}
 	@Override
 	public String describe(){
-		return "uses a fighting dance that sharply raises ATTACK.";
+		return MoveMessages.getStr("swordsDance");
 	}
 }

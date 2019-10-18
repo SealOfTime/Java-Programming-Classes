@@ -15,6 +15,6 @@ public class Psychic extends SpecialMove{
 	}
 	@Override
 	public String describe(){
-		return 	"uses a powerful psychic attack that may lower SP. DEF.";
+		return MoveMessages.getStr("psychic"));
 	}
 }

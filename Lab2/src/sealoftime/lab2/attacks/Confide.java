@@ -14,6 +14,6 @@ public class Confide extends StatusMove{
 	}
 	@Override
 	public String describe(){
-		return "tells the target a secret, and the target loses its ability to concentrate. This lowers the target’s Sp. Atk stat.";
+		return MoveMessages.getStr("confide");
 	}
 }
