@@ -4,8 +4,8 @@ import ru.ifmo.se.pokemon.*;
 import sealoftime.lab2.attacks.*;
 public class Drampa extends Pokemon{
 	
-		public Drampa(){
-			super("Drampa", 1);
+		public Drampa(String name, int level){
+			super(name, level);
 			this.addType(Type.NORMAL);
 			this.addType(Type.DRAGON);
 			this.addMove(new Confide());
@@ -25,5 +25,9 @@ public class Drampa extends Pokemon{
 				91.0d,
 				36.0d
 			);
+		}
+		
+		public Drampa(){
+			this("Drampa", 1);
 		}
 }

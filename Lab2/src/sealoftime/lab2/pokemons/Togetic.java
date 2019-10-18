@@ -5,8 +5,8 @@ import sealoftime.lab2.attacks.DoubleEdge;
 
 public class Togetic extends Togepi{
 	
-	public Togetic(){
-		super();
+	public Togetic(String name, int level){
+		super(name, level);
 		this.addType(Type.FLYING);
 		this.addMove(new DoubleEdge());
 		/*
@@ -23,5 +23,8 @@ public class Togetic extends Togepi{
 			40.0d
 		);
 	}
-
+	
+	public Togetic(){
+		this("Togetic", 1);
+	}
 }

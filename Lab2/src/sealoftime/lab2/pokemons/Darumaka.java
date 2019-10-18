@@ -5,8 +5,8 @@ import sealoftime.lab2.attacks.*;
 
 public class Darumaka extends Pokemon{
 	
-		public Darumaka(){
-			super("Darumaka", 1);
+		public Darumaka(String name, int level){
+			super(name, level);
 			this.addType(Type.FIRE);
 			this.addMove(new Flamethrower());
 			this.addMove(new FirePunch());
@@ -24,5 +24,9 @@ public class Darumaka extends Pokemon{
 				45.0d,
 				50.0d
 			);
+		}
+		
+		public Darumaka(){
+			this("Darumaka", 1);
 		}
 }

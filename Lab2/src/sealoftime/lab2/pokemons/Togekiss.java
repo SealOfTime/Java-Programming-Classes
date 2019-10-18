@@ -4,8 +4,8 @@ import sealoftime.lab2.attacks.ExtremeSpeed;
 
 public class Togekiss extends Togetic{
 	
-	public Togekiss(){
-		super();
+	public Togekiss(String name, int level){
+		super(name, level);
 		this.addMove(new ExtremeSpeed());
 		/*
 		Задаю базовые значения характеристик покемона в порядке
@@ -20,5 +20,8 @@ public class Togekiss extends Togetic{
 			115.0d,
 			80.0d
 		);
+	}
+	public Togekiss(){
+		this("Togekiss", 1);
 	}
 }

@@ -1,1 +1,1 @@
-find -name "*.java" > sources.txt && javac -cp "Pokemon.jar" -sourcepath "./src" -d ./Compiled/ @sources.txt && rm sources.txt
+find -name "*.java" > sources.txt && javac -cp "Pokemon.jar" -sourcepath "./src" -d ./Compiled/ @sources.txt && rm ./sources.txt
