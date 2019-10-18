@@ -6,6 +6,7 @@ import sealoftime.lab2.pokemons.*;
 import sealoftime.lab2.attacks.*;
 public class Lab2Test{
 	public static void main(String[] args){
+		//Suggestion: Pokemons should be able to have multiple status effects at once
 		if(args.length > 0 && args[0].equals("ru")){
 			Locale.setDefault(new Locale("ru", "RU"));
 		} else{

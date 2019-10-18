@@ -10,7 +10,7 @@ public class Screech extends StatusMove{
 	@Override
 	public void applyOppEffects(Pokemon p){
 		p.addEffect(new Effect()
-			.turns(0)
+			.turns(-1)
 			.stat(Stat.DEFENSE, -2)
 		);
 	}

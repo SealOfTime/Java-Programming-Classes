@@ -9,6 +9,7 @@ public class Confide extends StatusMove{
 	@Override
 	public void applyOppEffects(Pokemon p){
 		p.addEffect(new Effect()
+			.turns(-1)
 			.stat(Stat.SPECIAL_ATTACK, -1)
 		);
 	}
