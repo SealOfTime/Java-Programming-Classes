@@ -1,2 +1,2 @@
-Main-Class: Lab2Test
+Main-Class: sealoftime.lab2.Lab2Test
 Class-Path: Pokemon.jar
