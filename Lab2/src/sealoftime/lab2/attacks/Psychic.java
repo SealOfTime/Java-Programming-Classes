@@ -1,6 +1,7 @@
 package sealoftime.lab2.attacks;
 
 import ru.ifmo.se.pokemon.*;
+import sealoftime.lab2.MoveMessages;
 
 public class Psychic extends SpecialMove{
 	public Psychic(){
@@ -15,6 +16,6 @@ public class Psychic extends SpecialMove{
 	}
 	@Override
 	public String describe(){
-		return MoveMessages.getStr("psychic"));
+		return MoveMessages.getStr("psychic");
 	}
 }

@@ -13,12 +13,12 @@ public class Lab2Test{
 			Locale.setDefault(Locale.ENGLISH);
 		}
 		Battle b = new Battle();
-		b.addAlly(new Drampa());
-		b.addAlly(new Togekiss());
-		b.addAlly(new Darumaka());
-		b.addFoe(new Darmanitan());
-		b.addFoe(new Togepi());
-		b.addFoe(new Togetic());
+		b.addAlly(new Drampa("Матвей", 1));
+		b.addAlly(new Togekiss("Женя", 1));
+		b.addAlly(new Darumaka("Здравый Смысл", 1));
+		b.addFoe(new Darmanitan("Александр Сергеевич", 100));
+		b.addFoe(new Togepi("ITMO", 100));
+		b.addFoe(new Togetic("ПСЖ", 100));
 		b.go();
 	}
 }

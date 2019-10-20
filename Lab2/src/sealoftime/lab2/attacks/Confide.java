@@ -1,6 +1,7 @@
 package sealoftime.lab2.attacks;
 
 import ru.ifmo.se.pokemon.*;
+import sealoftime.lab2.MoveMessages;
 
 public class Confide extends StatusMove{
 	public Confide(){
