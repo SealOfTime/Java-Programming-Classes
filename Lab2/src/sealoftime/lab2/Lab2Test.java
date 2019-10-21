@@ -16,6 +16,7 @@ public class Lab2Test{
 		b.addAlly(new Drampa("Матвей", 1));
 		b.addAlly(new Togekiss("Женя", 1));
 		b.addAlly(new Darumaka("Здравый Смысл", 1));
+		
 		b.addFoe(new Darmanitan("Александр Сергеевич", 100));
 		b.addFoe(new Togepi("ITMO", 100));
 		b.addFoe(new Togetic("ПСЖ", 100));

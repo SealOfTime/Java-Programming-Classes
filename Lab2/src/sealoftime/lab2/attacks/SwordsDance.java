@@ -10,7 +10,7 @@ public class SwordsDance extends StatusMove{
 	@Override
 	public void applySelfEffects(Pokemon p){
 		p.addEffect(new Effect()
-			.turns(-1)
+			.turns(0)
 			.stat(Stat.ATTACK, 2)
 		);
 	}

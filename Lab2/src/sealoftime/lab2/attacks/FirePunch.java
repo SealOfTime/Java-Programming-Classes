@@ -12,7 +12,7 @@ public class FirePunch extends PhysicalMove{
 	public void applyOppEffects(Pokemon p){
 		p.addEffect(new Effect()
 			.chance(0.1)
-			.turns(-1)
+			.turns(0)
 			.condition(Status.BURN)
 		);
 	}
