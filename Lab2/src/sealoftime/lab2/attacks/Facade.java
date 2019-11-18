@@ -14,9 +14,8 @@ public class Facade extends PhysicalMove{
 		switch(attStatus){
 			case POISON:
 			case PARALYZE:
-				return 140.0d;
 			case BURN:
-				return 70.0d;
+				return super.calcBaseDamage(att, def)*2.0D;
 			default:
 				return super.calcBaseDamage(att, def);
 		}

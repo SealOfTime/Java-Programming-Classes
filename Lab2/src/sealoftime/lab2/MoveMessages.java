@@ -5,7 +5,6 @@ import java.util.ResourceBundle;
 
 public abstract class MoveMessages extends ListResourceBundle {
     private static ResourceBundle bundle = getBundle("sealoftime.lab2.MoveMessages");
-
     public MoveMessages() {
     }
 
