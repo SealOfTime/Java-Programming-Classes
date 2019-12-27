@@ -1,6 +1,7 @@
 package ru.sealoftime.lab3;
 
 import ru.sealoftime.lab3.actors.Actor;
+import ru.sealoftime.lab3.lightning.Lightning;
 
 public class Dungeon {
     private String height;
@@ -9,6 +10,13 @@ public class Dungeon {
     private Lightning lightning;
     private Actor[][] map;
 
+    public Dungeon(Lightning lightning, String height, int length, int width){
+        this.lightning = lightning;
+        this.height = height;
+        this.length = length;
+        this.width = width;
+        this.map = new Actor[width][length];
+    }
     public void moveActor(Actor actor, int x, int y){
 
     }
