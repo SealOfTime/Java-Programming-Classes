@@ -1,5 +1,16 @@
 package ru.sealoftime.lab3;
 
 public enum Material {
-    DEFAULT, WOOD, METAL, GOLD
+    DEFAULT("Материальный"), 
+    WOOD("Деревянный"), 
+    METAL("Металлический"), 
+    GLASS("Стеклянный"),
+    GOLD("Золотой");
+	
+	private final String name;
+	Material(String name) {
+        this.name = name;
+    }
+	@Override
+    public String toString(){return name;}
 }

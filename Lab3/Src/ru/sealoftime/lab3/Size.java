@@ -1,7 +1,9 @@
 package ru.sealoftime.lab3;
 
 public enum Size {
-    PETITE("крохотный"), SMALL("маленький"), BIG("большой");
+    PETITE("Крохотный"), 
+    SMALL("Маленький"), 
+    BIG("Большой");
 
     private final String name;
     Size(String name) {

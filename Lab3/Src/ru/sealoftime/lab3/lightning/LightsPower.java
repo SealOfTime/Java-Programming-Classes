@@ -13,4 +13,8 @@ public enum LightsPower {
         this.name = name;
         this.value = value;
     }
+    @Override
+    public String toString() {
+    	return this.name;
+    }
 }

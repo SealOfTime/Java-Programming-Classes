@@ -16,6 +16,7 @@ public class Curtain extends Actor implements Interactable {
 
     @Override
     public boolean interact() {
+    	this.getDungeon().removeActor(this);
         return true;
     }
 
@@ -23,4 +24,22 @@ public class Curtain extends Actor implements Interactable {
     public boolean interact(Item item) {
         return false;
     }
+    
+    @Override
+    public String toString() {
+    	return "Штора" + this.getHeight();
+    }
+	
+	@Override
+	public boolean equals(Object obj){
+		if(!super.equals(obj)) return false;
+		if(!this.height.equals(((Curtain)obj).height)) return false;
+		return true;
+	}
+	@Override
+	public int hashCode(){
+		int hash = super.hashCode();
+		hash = hash*31 + height.hashCode();
+		return hash;
+	}
 }
