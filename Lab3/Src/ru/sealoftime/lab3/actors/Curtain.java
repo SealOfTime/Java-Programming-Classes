@@ -27,7 +27,7 @@ public class Curtain extends Actor implements Interactable {
     
     @Override
     public String toString() {
-    	return "Штора" + this.getHeight();
+    	return "Штора " + this.getHeight();
     }
 	
 	@Override

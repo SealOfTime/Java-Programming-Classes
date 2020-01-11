@@ -67,7 +67,7 @@ public class Alice extends Actor{
     
     @Override
     public String toString() {
-    	return "Алиса";
+    	return "Алиса. Настроение: " + mood + ", Последняя мысль: " + lastThought + " " + this.getX() + " " + this.getY();
     }
 	
 	@Override

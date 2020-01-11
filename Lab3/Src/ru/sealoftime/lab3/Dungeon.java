@@ -40,7 +40,7 @@ public class Dungeon {
     @Override
     public String toString() {
     	return this.height  + 
-    			"Подземелье освещалось " + this.lightning.toString();
+    			" Подземелье освещалось " + this.lightning.toString();
     }
     public Actor getActor(int x, int y){
         return this.map[x][y];

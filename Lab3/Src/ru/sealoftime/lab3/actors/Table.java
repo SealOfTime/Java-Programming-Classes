@@ -27,7 +27,7 @@ public class Table extends Actor implements Interactable {
     }
 	@Override
 	public String toString(){
-		return "Стол, на котором лежит " + content.toString();
+		return "Стол, на котором лежит " + (content!=null ? content.toString():"ничево на нем не лежит");
 	}
 	@Override
 	public boolean equals(Object obj){
