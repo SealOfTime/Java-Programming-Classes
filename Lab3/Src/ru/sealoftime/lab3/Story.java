@@ -32,7 +32,7 @@ public class Story {
         dungeon.addActor(table, 6, 2);
         
         Curtain curtain = new Curtain("до самого пола");
-        dungeon.addActor(curtain, 8, 2);
+        dungeon.addActor(curtain, 7, 2);
         
         for(int i = 1; i < dungeon.getWidth()-1; i++) {
         	alice.step(i, 1);
@@ -129,9 +129,8 @@ public class Story {
 				}
         	}
         }
-        alice.step(7,2);
+        alice.step(8,2);
         for(Interactable object : alice.lookAround()) {
-			System.out.println(alice.lookAround());
         	if(object instanceof Curtain) {
 				System.out.println(object);
         		alice.interact(object);

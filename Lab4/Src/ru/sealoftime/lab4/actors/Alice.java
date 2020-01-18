@@ -1,8 +1,9 @@
-package ru.sealoftime.lab3.actors;
+package ru.sealoftime.lab4.actors;
 
-import ru.sealoftime.lab3.Interactable;
-import ru.sealoftime.lab3.Item;
-import ru.sealoftime.lab3.Mood;
+import ru.sealoftime.lab4.Interactable;
+import ru.sealoftime.lab4.Item;
+import ru.sealoftime.lab4.Mood;
+import ru.sealoftime.lab4.Dungeon;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -41,6 +42,9 @@ public class Alice extends Actor{
     public boolean interact(Interactable object){
         for(Item item : inventory){
             if(object.interact(item)){
+				if(object instanceof Door && item instanceof Item){
+					this.lastThought = "О радость, он как раз подошёл";
+				}
                 inventory.remove(item);
                 return true;
             }
@@ -50,7 +54,11 @@ public class Alice extends Actor{
     //TODO: Actually make it good
     public boolean step(int x, int y){
         int currentX = this.getX();
-        this.getDungeon().moveActor(this, x, y);
+		try{
+			this.getDungeon().moveActor(this, x, y);
+		}catch(Dungeon.SpotOccupiedException e){
+			e.printStackTrace();
+		}
         return true;
     }
     public boolean step(int x, int y, Mood mood){
