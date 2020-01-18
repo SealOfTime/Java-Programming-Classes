@@ -57,18 +57,18 @@ public class Story {
 			e.printStackTrace();
 		}
         
-		class Walk{
+		abstract class Walk{
 			private int stepUntil;
-			private Consumer<Integer> step;
 			
-			Walk(int stepUntil, Consumer<Integer> step){
+			Walk(int stepUntil){
 				this.stepUntil = stepUntil;
-				this.step = step;
 			}
+			
+			abstract void step(int i);
 			
 			public void run(){
 				for(int i = 1; i < stepUntil; i++) {
-					step.accept(i);
+					step(i);
 					List<Interactable> whatIsAroundAlice = alice.lookAround();
 					for(Interactable object : whatIsAroundAlice) {
 						if(object instanceof Door){
@@ -79,11 +79,26 @@ public class Story {
 				}
 			}
 		}
-		
-		Walk walkTopWall = new Walk(dungeon.getWidth()-1, (i)->alice.step(i,1));
-		Walk walkBottomWall = new Walk(dungeon.getWidth()-1, (i)->alice.step(i, dungeon.getLength()-2));
-		Walk walkLeftWall = new Walk(dungeon.getLength()-1, (i)->alice.step(1, i));
-		Walk walkRightWall = new Walk(dungeon.getLength()-1, (i)->alice.step(dungeon.getWidth()-2, i));
+		Walk walkTopWall = new Walk(dungeon.getWidth()-1){
+			void step(int i){
+				alice.step(i, 1);
+			}
+		};
+		Walk walkBottomWall = new Walk(dungeon.getWidth()-1){
+			void step(int i){
+				alice.step(i, dungeon.getLength()-2);
+			}
+		};
+		Walk walkLeftWall = new Walk(dungeon.getLength()-1){
+			void step(int i){
+				alice.step(1, i);
+			}
+		};
+		Walk walkRightWall = new Walk(dungeon.getLength()-1){
+			void step(int i){
+				alice.step(dungeon.getWidth()-2, i);
+			}
+		};
 		walkTopWall.run();
 		walkBottomWall.run();
         walkLeftWall.run();
